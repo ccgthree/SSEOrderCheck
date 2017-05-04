@@ -1,0 +1,1 @@
+javascript:(function(){var jsCode = document.createElement('script'); jsCode.setAttribute('src','https://rawgit.com/ccgthree/SSEOrderCheck/master/SSEOrderCheck.js'); document.body.appendChild(jsCode); jsCode.addEventListener('load', function (e) {console.log(e); window.open(url(),'_blank');})}());
