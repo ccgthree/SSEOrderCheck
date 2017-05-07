@@ -54,6 +54,7 @@ function buildLink(callback){
 // display the link AFTER jQuery has loaded. This will
 // hold the display / destruct functionality of the link
 // for 500ms. 
+
 /*
 buildLink(function() {
   setTimeout(function(){
@@ -65,6 +66,8 @@ buildLink(function() {
 });
 */
 
+// Wrapped final function in doStuff, so that
+// the code can be called by the bookmarklet. 
 function doStuff() {
   buildLink(function() {
   setTimeout(function(){
