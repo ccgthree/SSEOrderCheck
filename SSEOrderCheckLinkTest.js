@@ -13,6 +13,7 @@ function checkJq() {
 
 checkJq();
 
+// Construct url using user input.
 function url() {
   var date = new Date();
   var y = date.getFullYear();
@@ -31,6 +32,8 @@ function url() {
   return linkResult;
 }
 
+// Construct link and prepare it for display.
+// The display will be handled by the callback function.
 function buildLink(callback){
   var floatingPanel = document.createElement('a');
   var panelStyle = 'display:none; position:fixed;z-index:9999999;top:10px;width:200px;left:50%;margin-left:-100px;font-family:Helvetica;color:#ffffff;background-color:#f4a802; text-decoration:none; text-align:center; box-shadow:0px 2px 10px #999999; border-radius:4px; ';
@@ -47,6 +50,10 @@ function buildLink(callback){
   callback();
 }
 
+// Include asynchronous callback function to 
+// display the link AFTER jQuery has loaded. This will
+// hold the display / destruct functionality of the link
+// for 500ms. 
 buildLink(function() {
   setTimeout(function(){
     $('#clickPanel').fadeIn(1000);
@@ -55,4 +62,3 @@ buildLink(function() {
     });
   }, 500);
 });
-
