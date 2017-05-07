@@ -4,3 +4,9 @@ javascript:function url() { var date = new Date(); var y = date.getFullYear(); v
 
 // Production-Ready Bookmarklet
 javascript:(function(){var jsCode=document.createElement('script');jsCode.setAttribute('src','https://rawgit.com/ccgthree/SSEOrderCheck/master/SSEOrderCheckLinkTest.js');document.body.appendChild(jsCode);doStuff();})();
+
+/* HTML Code for Link
+
+<a id="codeOut" href="javascript:(function(){var jsCode=document.createElement('script');jsCode.setAttribute('src','https://rawgit.com/ccgthree/SSEOrderCheck/master/SSEOrderCheckLinkTest.js');document.body.appendChild(jsCode);doStuff();})();">Your Bookmarklet</a>
+
+*/
