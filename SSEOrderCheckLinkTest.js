@@ -54,6 +54,7 @@ function buildLink(callback){
 // display the link AFTER jQuery has loaded. This will
 // hold the display / destruct functionality of the link
 // for 500ms. 
+/*
 buildLink(function() {
   setTimeout(function(){
     $('#clickPanel').fadeIn(1000);
@@ -62,3 +63,15 @@ buildLink(function() {
     });
   }, 500);
 });
+*/
+
+function doStuff() {
+  buildLink(function() {
+  setTimeout(function(){
+    $('#clickPanel').fadeIn(1000);
+    $('#clickPanel').click(function() {
+      $('#clickPanel').fadeOut(500);
+    });
+  }, 500);
+});
+}
