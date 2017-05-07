@@ -36,13 +36,13 @@ function url() {
 // The display will be handled by the callback function.
 function buildLink(callback){
   var floatingPanel = document.createElement('a');
-  var panelStyle = 'display:none; position:fixed;z-index:9999999;top:10px;width:200px;left:50%;margin-left:-100px;font-family:Helvetica;color:#ffffff;background-color:#f4a802; text-decoration:none; text-align:center; box-shadow:0px 2px 10px #999999; border-radius:4px; ';
+  var panelStyle = 'display:none; position:fixed;z-index:9999999;top:10px;width:200px;left:50%;margin-left:-100px;font-family:Helvetica;color:#ffffff;background-color:#F37A1F; text-decoration:none; text-align:center; box-shadow:0px 2px 10px #999999; border-radius:4px; ';
   floatingPanel.setAttribute('href', url());
   floatingPanel.setAttribute('style', panelStyle);
   floatingPanel.setAttribute('id', 'clickPanel');
   floatingPanel.setAttribute('target','_blank');
   var linkHeader = document.createElement('h3');
-  linkHeader.setAttribute('style','line-height:40px; text-decoration:none; font-size-adjust:0.7;');
+  linkHeader.setAttribute('style','line-height:40px; text-decoration:none; font-size:18px;');
   var linkText = document.createTextNode('Track Shipments');
   floatingPanel.appendChild(linkHeader);
   linkHeader.appendChild(linkText);
